@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <clipPath id="c"><rect x="4" y="4" width="120" height="120" rx="26"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="128" height="128" fill="#DEE1E6"/>
+    <rect y="86" width="128" height="40" fill="#FFFFFF"/>
+    <circle cx="21" cy="65" r="12" fill="#5F6368"/>
+    <g fill="none" stroke="#DEE1E6" stroke-width="2.4">
+      <ellipse cx="21" cy="65" rx="5.0" ry="12"/>
+      <path d="M9 65 H33"/>
+    </g>
+    <path d="M35 86 q6 0 6 -6 V52 q0 -8 8 -8 H57 q8 0 8 8 V80 q0 6 6 6 Z" fill="#1A73E8"/>
+    <circle cx="53.0" cy="65" r="5.5" fill="#fff"/>
+    <path d="M65 86 q6 0 6 -6 V52 q0 -8 8 -8 H87 q8 0 8 8 V80 q0 6 6 6 Z" fill="#1E8E3E"/>
+    <circle cx="83.0" cy="65" r="5.5" fill="#fff"/>
+    <path d="M95 86 q6 0 6 -6 V52 q0 -8 8 -8 H117 q8 0 8 8 V80 q0 6 6 6 Z" fill="#F9AB00"/>
+    <circle cx="113.0" cy="65" r="5.5" fill="#fff"/>
+    <rect x="16" y="97" width="96" height="14" rx="7" fill="#F1F3F4"/>
+  </g>
+  <rect x="4" y="4" width="120" height="120" rx="26" fill="none" stroke="#C4C7CC" stroke-width="3"/>
+</svg>

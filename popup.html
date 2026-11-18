@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TabLanes</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <div class="brand"><img class="mark" src="icons/icon48.png" alt=""><div><h1>TabLanes</h1><p>Auto Tab Groups by URL</p></div></div>
+    <form id="rule-form">
+      <label for="group-name">Group name</label>
+      <input id="group-name" type="text" placeholder="e.g. YouTube" required maxlength="40">
+      <label for="pattern">Website URL patterns</label>
+      <textarea id="pattern" placeholder="https://www.youtube.com/*&#10;https://youtu.be/*" required spellcheck="false" rows="3"></textarea>
+      <p class="hint">Add one URL pattern per line. Use * to match any characters.</p>
+      <div class="form-row">
+        <label class="color-label" for="color">Group color</label>
+        <select id="color">
+          <option value="blue">Blue</option><option value="red">Red</option>
+          <option value="yellow">Yellow</option><option value="green">Green</option>
+          <option value="pink">Pink</option><option value="purple">Purple</option>
+          <option value="cyan">Cyan</option><option value="orange">Orange</option>
+          <option value="grey">Grey</option>
+        </select>
+      </div>
+      <div class="form-actions">
+        <button id="save-rule" type="submit">Create group</button>
+        <button id="cancel-edit" type="button" hidden>Cancel</button>
+      </div>
+    </form>
+    <section class="groups-section">
+      <h2>Your URL rules <span id="rule-count">0</span></h2>
+      <div id="rules" class="rules"></div>
+      <p id="empty" class="empty">No rules yet. Add a URL pattern above to get started.</p>
+    </section>
+    <p class="footnote">Matching tabs are grouped as soon as they open, including the first tab. To hide groups from the bookmarks bar, turn off Chrome’s “Show tab groups in bookmarks bar” setting under Appearance.</p>
+    <div id="status" aria-live="polite"></div>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
